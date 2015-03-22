@@ -4,7 +4,6 @@ body {
   	background-position: top center;
 }
 .masthead {
-	width: 600px;
 	display: flex;
 	float: center;
 	position: relative;
@@ -37,7 +36,7 @@ body {
     display: block;
     position: relative;
     margin: 10px auto;
-    width: 600px;
+    width: 100%;
 }
 
 .category {
@@ -109,4 +108,54 @@ body {
 	height: 24px;
 	vertical-align: middle;
 	padding: 4px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    .container, .masthead {
+    	width: 450px;
+      	padding: 1em 0;
+    }
+
+    .masthead h1 {
+    	font-size: 1em;
+    	text-align: center;
+    }
+    .input	{
+		display: inline-flex;
+		margin-left: 10px;
+	}
+
+	.text {
+		border: solid;
+		width: 200px;
+		background-color: white;
+		margin-left: 5px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+    .container, .masthead {
+    	width: 300px;
+    	height: auto;
+      	padding: 1em 0;
+    }
+    .masthead h1 {
+    	font-size: 1em;
+    }
+    .input	{
+		display: inline-flex;
+		margin: 0 auto;
+	}
+
+	.text {
+		border: solid;
+		width: 125px;
+		background-color: white;
+		margin: 0 auto;
+	}
+
+	.button2 {
+		margin: 0 1px;
+	}
 }
