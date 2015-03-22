@@ -11,12 +11,11 @@
 <body>
 	<div class="container">
 	<section class="masthead">
-      <button onclick="window.location.href='../my-shopping-list/addCategory.html'">Add Category</button>
-    	<h1>My Shopping List</h1>
+      <h1>My Shopping List</h1>
   	</section>
   	<section class="list-section">
   		<ul class="list">
-        <li class="category">
+        <li class="category" id="Produce">
           <span class="category-name">Produce</span>
           <img class="remove" src="images/close-icon.png" alt="X">
         </li>
@@ -57,7 +56,20 @@
   	</section>
 	<section class="list-entry">
 			<input type="text" id="input">
-      <button>Add To List</button>
+      <div class="categorySelect">
+        <form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+          <div class="categoryDropdown">
+            <select id="categoryOptions">
+              <option>Produce</option>
+              <option>Meats</option>
+              <option>Frozen</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <hr>
+      <button id="addItem">Add Item To List</button>
+      <button id="addCategory">Add Category To List</button>
 	</section>
 	</div>
 </body>

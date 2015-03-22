@@ -80,7 +80,7 @@ body {
 }
 
 .list-entry	{
-	display: inline-flex;
+	display: inline-block;
 	margin-left: 10px;
 }
 
@@ -94,7 +94,6 @@ body {
 	width: 300px;
 	height: 24px;
 	background-color: white;
-	margin-left: 40px;
 	padding: 0.5rem 0.2rem;
 }
 
@@ -103,6 +102,10 @@ body {
 	height: 24px;
 	vertical-align: middle;
 	padding: 4px;
+}
+
+.categorySelect {
+	
 }
 
 /* Button */
