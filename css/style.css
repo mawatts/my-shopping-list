@@ -1,0 +1,112 @@
+body {
+	background-image: url('../images/groceries.jpg');
+	background-repeat: no-repeat;
+  	background-position: top center;
+}
+.masthead {
+	width: 600px;
+	display: flex;
+	float: center;
+	position: relative;
+	margin: 0 auto;
+}
+
+.masthead > h1 {
+	margin: 0 auto;
+}
+
+.button, .button2{
+	background-color: #3F7F46;
+	border: solid 1px;
+	margin-left: 35px;
+	width: 140px;
+	text-align: center;
+}
+
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	border: solid;
+	padding: 5px 0px;
+	font-size: 24px;
+	background-color: #5EBF6A;
+}
+
+.list {
+    float: left;
+    display: block;
+    position: relative;
+    margin: 10px auto;
+    width: 600px;
+}
+
+.category {
+	background-color: #3F7F46;
+	height: 24px;
+	padding-left: 10px;
+	padding-right: 3px;
+}
+
+.list > .category-name {
+	border: solid 2px;
+	height: 24px;
+}
+
+.item {
+	background-color: #FFF;
+	height: 24px;
+	vertical-align: middle;
+	padding: 4px;
+}
+
+.item-name {
+	padding-left: 20px;
+}
+
+.unchecked {
+	float: left;
+	width: 24px;
+	height: 24px;
+	background-image: url('../images/checkbox-unchecked.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.checked {
+	float: left;
+	width: 24px;
+	height: 24px;
+	background-image: url('../images/checkbox-checked.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.remove {
+	float: right;
+	margin-right: 10px;
+	height: 24px;
+	width: auto;
+}
+
+.input	{
+	display: inline-flex;
+	margin-left: 10px;
+}
+
+.line-through {
+	text-decoration: line-through;
+}
+
+.text {
+	border: solid;
+	width: 300px;
+	background-color: white;
+	margin-left: 40px;
+}
+
+.category-item {
+	background-color: #FFF;
+	height: 24px;
+	vertical-align: middle;
+	padding: 4px;
+}

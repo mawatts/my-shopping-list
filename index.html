@@ -7,29 +7,58 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 </head>
 <body>
-	<header class="masthead">
-    	<div class="masthead-button-container"><button>Add Category</button></div>
-    	<p class="masthead-name">My Shopping List</p>
-  	</header>
-  	<section class="list">
-  		<ul class="category">
-  			<li class="category-name">Produce</li>
-  			<li class="category-name">Meats</li>
-  			<li class="category-name">Frozen</li>
-  		</ul>
-  		<ul class="item">
-  			<li class="item-name">Eggs</li>
-  			<li class="item-name">Milk</li>
-  			<li class="item-name">Steak</li>
-  			<li class="item-name">Pork Chops</li>
-  			<li class="item-name">Chocolate Ice Cream</li>
+	<div class="container">
+	<section class="masthead">
+    	<div class="button"><a href="../my-shopping-list/addCategory.html">Add Category</a></div>
+    	<h1>My Shopping List</h1>
+  	</section>
+  	<section class="list-section">
+  		<ul class="list">
+        <li class="category">
+          <span class="category-name">Produce</span>
+          <img class="remove" src="images/close-icon.png" alt="X">
+        </li>
+  			<li class="item">
+          <div class="unchecked"></div>
+  				<span class="item-name">Eggs</span>
+  				<img class="remove" src="images/close-icon.png" alt="X">
+  			</li>
+        <li class="item">
+          <div class="unchecked"></div>
+          <span class="item-name">Milk</span>
+          <img class="remove" src="images/close-icon.png" alt="X">
+        </li>
+        <li class="category">
+          <span class="category-name">Meats</span>
+          <img class="remove" src="images/close-icon.png" alt="X">
+        </li>
+        <li class="item line-through">
+          <div class="checked"></div>
+          <span class="item-name">Steak</span>
+          <img class="remove" src="images/close-icon.png" alt="X">
+        </li>
+        <li class="item">
+          <div class="unchecked"></div>
+          <span class="item-name">Pork Chops</span>
+          <img class="remove" src="images/close-icon.png" alt="X">
+        </li>
+        <li class="category">
+          <span class="category-name">Frozen</span>
+          <img class="remove" src="images/close-icon.png" alt="X">
+        </li>
+        <li class="item line-through">
+          <div class="checked"></div>
+          <span class="item-name">Chocolate Ice Cream</span>
+          <img class="remove" src="images/close-icon.png" alt="X">
+        </li>
   		</ul>
   	</section>
 	<section class="list-entry">
-		<div class="list-entry-container">
-			<p class="list-text-box"></p>
-			<button>Add To List</button>
+		<div class="input">
+			<p class="text"></p>
+			<div class="button2">Add To List</div>
 		</div>
 	</section>
+	</div>
 </body>
 </html>
