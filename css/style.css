@@ -54,22 +54,19 @@ body {
 	padding-left: 20px;
 }
 
-.unchecked {
+.checkbox {
 	float: left;
 	width: 24px;
 	height: 24px;
-	background-image: url('../images/checkbox-unchecked.png');
-	background-repeat: no-repeat;
-	background-position: center;
+	background: url('../images/checkbox-sprite.png') 0 0;
 }
 
 .checked {
-	float: left;
-	width: 24px;
-	height: 24px;
-	background-image: url('../images/checkbox-checked.png');
-	background-repeat: no-repeat;
-	background-position: center;
+	background: url('../images/checkbox-sprite.png') 0 -24px;
+}
+
+.strikeThrough {
+	text-decoration: line-through;
 }
 
 .remove {
@@ -91,10 +88,24 @@ body {
 #input {
 	border: solid 0.125rem;
 	border-radius: 4px;
-	width: 300px;
-	height: 24px;
+	float: left;
+	width: 180px;
+	height: 18px;
+	margin-bottom: 10px;
+	margin: 0 45px;
 	background-color: white;
 	padding: 0.5rem 0.2rem;
+}
+
+#categoryOptions {
+	margin: 0 50px;
+	width: 190px;
+	height: 38px;
+	font-size: 24px;
+	background-color: #3F7F46;
+	border-style: none;
+    border-radius: 4px;
+    color: #FFF;
 }
 
 .category-item {
@@ -104,16 +115,17 @@ body {
 	padding: 4px;
 }
 
-.categorySelect {
-	
+hr {
+	margin: 10px auto;
+	width: 580px;
 }
 
 /* Button */
 button {
 	background-color: #3F7F46;
 	border: solid 1px;
-	margin-left: 35px;
-	width: 140px;
+	margin: 0 45px;
+	width: 190px;
 	text-align: center;
 	border-color: #f15a29;
     text-shadow: none;
@@ -147,9 +159,23 @@ button:hover {
 
 	#input {
 		border: solid;
-		width: 200px;
+		width: 180px;
 		background-color: white;
-		margin-left: 5px;
+		margin-left: 10px;
+	}
+
+	#categoryOptions {
+		margin: 0 -20px;
+		font-size: 18px;
+	}
+
+	hr {
+		margin: 10px auto;
+		width: 410px;
+	}
+
+	button {
+		margin: 0 10px;
 	}
 }
 
@@ -171,9 +197,22 @@ button:hover {
 
 	#input {
 		border: solid;
-		width: 125px;
+		width: 115px;
+		height: 10px;
 		background-color: white;
-		margin: 0 1rem;
+		margin: 0 6px;
+	}
+
+	#categoryOptions {
+		width: 125px;
+		height: 30px;
+		margin: 0 7px;
+		font-size: 18px;
+	}
+
+	hr {
+		margin: 5px auto;
+		width: 250px;
 	}
 
 	.item-name, .category-name {
@@ -181,8 +220,8 @@ button:hover {
 	}
 
 	button {
-		margin: 0 0.75rem;
-		width: 100px;
+		margin: 0 6px;
+		width: 125px;
 		text-align: center;
 		padding: 0.4rem 0.2rem;
     	font-size: 0.75rem;
